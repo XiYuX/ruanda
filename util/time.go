@@ -9,7 +9,7 @@ const TIME_FORMAT_FOUR = "2006.01.02 15:04:05"
 
 //将int64整形
 
-func TimeFormat(sec int64 ,nsec int64,format string) string {
-	return time.Unix(sec,nsec).Format(format)
+func TimeFormat(sec int64, nsec int64, format string) string {
+	return time.Unix(sec, nsec).Format(format)
 
 }

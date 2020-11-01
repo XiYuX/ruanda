@@ -6,7 +6,6 @@ import (
 	"time"
 )
 
-
 //区块结构体的定义
 
 type Block struct {
@@ -21,7 +20,7 @@ type Block struct {
 
 //生成创世区块，返回区块信息
 
-func CreateGenesisBlock()Block{
+func CreateGenesisBlock() Block {
 	block := NewBlock(0, []byte{}, []byte{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0})
 	return block
 }
@@ -39,8 +38,7 @@ func NewBlock(height int64, data []byte, prevHash []byte) Block {
 	}
 	//2、为新生成的block，寻找合适的nonce值
 	pow := NewPow(block)
-	blockHash,nonce := pow.Run()
-
+	blockHash, nonce := pow.Run()
 
 	//3、将block的nonce设置为找到的合适的nonce值
 	block.Nonce = nonce
@@ -66,20 +64,20 @@ func NewBlock(height int64, data []byte, prevHash []byte) Block {
 	return block
 }
 
-func  (bk Block) Serialize()([]byte,error){
+func (bk Block) Serialize() ([]byte, error) {
 	buff := new(bytes.Buffer)
-	err :=gob.NewEncoder(buff).Encode(bk)
-	if err!= nil{
-		return nil,err
+	err := gob.NewEncoder(buff).Encode(bk)
+	if err != nil {
+		return nil, err
 	}
-	return buff.Bytes(),nil
+	return buff.Bytes(), nil
 }
 
-func DeSerialize(data []byte)(*Block,error){
+func DeSerialize(data []byte) (*Block, error) {
 	var block Block
 	err := gob.NewDecoder(bytes.NewReader(data)).Decode(&block)
-	if err != nil{
-		return nil,err
+	if err != nil {
+		return nil, err
 	}
-	return &block,nil
+	return &block, nil
 }

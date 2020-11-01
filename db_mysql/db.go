@@ -5,9 +5,10 @@ import (
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
 )
+
 var Db *sql.DB
 
-func ConnctDB(){
+func ConnctDB() {
 	//1.读取conf配置信息
 	config := beego.AppConfig
 	dbDriver := config.String("driverName")
@@ -25,5 +26,3 @@ func ConnctDB(){
 	//4.为全局赋值
 	Db = db
 }
-
-

@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f8ea3cd-0624-4463-8705-1ff2c50ab235" name="默认更改列表" comment="" />
+    <list default="true" id="687643b3-3d8b-4962-97c0-3768c6ca57f1" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/DataCertProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/DELL.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/certDetailController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/certDetailController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/registerCon.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/registerCon.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/uploadFileController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/uploadFileController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userLoginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userLoginController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userRegisterConntroller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userRegisterConntroller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_mysql/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db_mysql/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/certRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/certRecord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/uploadRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/uploadRecord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/app-f03c3be68c19ce58d4ff.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/app-f03c3be68c19ce58d4ff.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/default_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/convert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/hash.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/hash.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cert_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/cert_detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,82 +39,163 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
-  <component name="ProjectId" id="1jBZOJajmPIg0mxUWBOQMxLRAtm" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1igj1LY2qBgMEG4D2czrtCiGINK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataCertProject/static/css" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\gopackage\src\DataCertProject\static\css" />
-      <recent name="C:\gopackage\src\Ssmyprgject\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\gopackage\src\Ssmyprgject" />
-      <recent name="C:\gopackage\src\Ssmyprgject\views" />
-      <recent name="C:\gopackage\src\Ssmyprgject\util" />
-      <recent name="C:\gopackage\src\Ssmyprgject\static" />
-      <recent name="C:\gopackage\src\Ssmyprgject\static\img" />
+      <recent name="C:\gopackage\src\DataCertProject" />
+      <recent name="C:\gopackage\src\DataCertProject\static" />
+      <recent name="C:\gopackage\src\DataCertProject\static\js" />
+      <recent name="C:\gopackage\src\DataCertProject\models" />
+      <recent name="C:\gopackage\src\DataCertProject\controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\gopackage\src\DataCertProject\views" />
+      <recent name="C:\gopackage\src\DataCertProject\routers" />
+      <recent name="C:\gopackage\src\DataCertProject\static" />
+      <recent name="C:\gopackage\src\DataCertProject\blockchain" />
+      <recent name="C:\gopackage\src\DataCertProject\static\js" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="go build Ssmyprgject" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Ssmyprgject" />
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="DataCertProject" />
       <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="Ssmyprgject" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="DataCertProject" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build Ssmyprgject" />
-      </list>
-    </recent_temporary>
+    <configuration name="go build DataCertProject" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="DataCertProject" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="DataCertProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="133" y="0" key="#GOROOT" timestamp="1604229091493">
+    <state x="133" y="0" key="#GOROOT" timestamp="1604212771568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="133" y="0" key="#GOROOT/0.0.1280.680@0.0.1280.680" timestamp="1604229091493" />
-    <state x="371" y="60" key="FileChooserDialogImpl" timestamp="1604229167272">
+    <state x="133" y="0" key="#GOROOT/0.0.1280.680@0.0.1280.680" timestamp="1604212771568" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604231943144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="60" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604229167272" />
-    <state x="371" y="64" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1603434937787" />
-    <state width="1227" height="163" key="GridCell.Tab.0.bottom" timestamp="1603283328931">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1604231943143" />
+    <state x="404" y="160" key="#com.intellij.tools.ToolEditorDialog" timestamp="1604232489996">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="404" y="160" key="#com.intellij.tools.ToolEditorDialog/0.0.1280.680@0.0.1280.680" timestamp="1604232489996" />
+    <state x="421" y="55" key="FileChooserDialogImpl" timestamp="1604232614360">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="55" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604232614360" />
+    <state x="421" y="119" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1603797889354" />
+    <state width="1227" height="96" key="GridCell.Tab.0.bottom" timestamp="1603943219918">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="96" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603943219918" />
+    <state width="822" height="119" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
+    <state width="1227" height="96" key="GridCell.Tab.0.center" timestamp="1603943219918">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="96" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603943219918" />
+    <state width="822" height="119" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
+    <state width="1227" height="96" key="GridCell.Tab.0.left" timestamp="1603943219918">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="96" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603943219918" />
+    <state width="822" height="119" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
+    <state width="1227" height="96" key="GridCell.Tab.0.right" timestamp="1603943219918">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1227" height="96" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603943219918" />
+    <state width="822" height="119" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
+    <state x="44" y="0" key="SettingsEditor" timestamp="1604232699174">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="44" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604232699174" />
+    <state x="44" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1603767298591" />
+    <state x="499" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604231670613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="499" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1604231670613" />
+    <state x="499" y="504" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1603091870475" />
+    <state x="281" y="86" width="718" height="548" key="find.popup" timestamp="1602406334102">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1227" height="163" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1603283328931" />
-    <state width="1227" height="163" key="GridCell.Tab.0.center" timestamp="1603283328931">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="281" y="86" width="718" height="548" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1602406334102" />
+    <state x="303" y="39" width="840" height="641" key="search.everywhere.popup" timestamp="1603867244569">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1227" height="163" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1603283328931" />
-    <state width="1227" height="163" key="GridCell.Tab.0.left" timestamp="1603283328929">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1227" height="163" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1603283328929" />
-    <state width="1227" height="163" key="GridCell.Tab.0.right" timestamp="1603283328931">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1227" height="163" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1603283328931" />
+    <state x="303" y="39" width="840" height="641" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1603867244569" />
+    <state x="303" y="41" width="840" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1603769276222" />
   </component>
 </project>

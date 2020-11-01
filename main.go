@@ -7,11 +7,9 @@ import (
 	"github.com/astaxie/beego"
 )
 
-
 func main() {
 	//准备一条区块链
 	blockchain.NewBlockChain()
-
 
 	//1、链接数据库
 	db_mysql.ConnctDB()

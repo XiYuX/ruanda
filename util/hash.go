@@ -34,7 +34,7 @@ func MD5HashReader(reader io.Reader) (string, error) {
 	return hex.EncodeToString(hashBytes), nil
 }
 
-func SHA256HashBlock(data []byte) ([]byte) {
+func SHA256HashBlock(data []byte) []byte {
 	//1、对block字段进行拼接
 
 	//2、对拼接后的数据进行sha256

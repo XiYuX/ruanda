@@ -3,21 +3,20 @@ package models
 import (
 	"DataCertProject/db_mysql"
 	"DataCertProject/util"
-
 )
 
 /**
  * 上传文件记录的 结构体定义
  */
 type UploadRecord struct {
-	Id        int
-	FileName  string
-	FileSize  int64
-	FileCert  string //认证号
-	FileTitle string
-	CertTime  int64 //整形
+	Id            int
+	FileName      string
+	FileSize      int64
+	FileCert      string //认证号
+	FileTitle     string
+	CertTime      int64  //整形
 	FormatCerTime string //时间格式化，该字段仅在前端展示
-	Phone     string //对应的用户的phone
+	Phone         string //对应的用户的phone
 }
 
 /**
@@ -56,7 +55,7 @@ func QueryRecordByPhone(phone string) ([]UploadRecord, error) {
 			return nil, err
 		}
 		//时间转换
-		record.FormatCerTime =  util.TimeFormat(record.CertTime,0,util.TIME_FORMAT_TWO)
+		record.FormatCerTime = util.TimeFormat(record.CertTime, 0, util.TIME_FORMAT_TWO)
 
 		records = append(records, record)
 	}

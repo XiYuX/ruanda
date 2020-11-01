@@ -31,7 +31,7 @@ func NewPow(Block Block) ProofOfWork {
 }
 
 //pow算法：寻找符合条件的nonce值
-func (p ProofOfWork) Run() ([]byte,int64) {
+func (p ProofOfWork) Run() ([]byte, int64) {
 	var nonce int64
 	var block256Hash []byte
 	//var bigBlock *big.Int//声明
@@ -68,5 +68,5 @@ func (p ProofOfWork) Run() ([]byte,int64) {
 		}
 		nonce++ //如果条件不满足，nonce值+1，继续下一次循环
 	}
-	return block256Hash,nonce
+	return block256Hash, nonce
 }

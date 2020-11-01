@@ -12,4 +12,3 @@ func (c *MainController) Get() {
 	//默认显示页面
 	c.TplName = "register.html"
 }
-

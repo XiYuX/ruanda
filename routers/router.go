@@ -13,7 +13,7 @@ func init() {
 	//直接登录的页面请求接口
 	beego.Router("/login.html", &controllers.LoginController{})
 	//用户登录请求接口
-	beego.Router("/user_login",&controllers.LoginController{})
+	beego.Router("/user_login", &controllers.LoginController{})
 	//文件上传接口
 	beego.Router("/upload", &controllers.UploadFileController{})
 }

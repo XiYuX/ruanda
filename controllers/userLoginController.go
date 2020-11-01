@@ -1,25 +1,24 @@
 package controllers
 
 import (
-	"github.com/astaxie/beego"
 	"DataCertProject/models"
 	"fmt"
+	"github.com/astaxie/beego"
 )
 
 type LoginController struct {
 	beego.Controller
 }
 
-
- //访问login.html页面的请求
-func (l *LoginController) Get(){
+//访问login.html页面的请求
+func (l *LoginController) Get() {
 	l.TplName = "login.html"
 }
 
 /**
  * 用户登录接口
  */
-func (l  *LoginController) Post(){
+func (l *LoginController) Post() {
 	var user models.User
 	err := l.ParseForm(&user)
 	if err != nil {

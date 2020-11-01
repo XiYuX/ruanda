@@ -6,17 +6,15 @@ import (
 	"math/big"
 )
 
-type (
-	//区块链结构体实例定义
-	//区块链包含：
-	//1、将新产生的区块与已有的区块链接起来，并保存
-	//2、可以查询某个区块的信息
-	//可以将所有的区块进行遍历，输出区块信息
-	BlockChain struct {
-		LastHash []byte //最新区块的hash
-		BoltDb   *bolt.DB
-	}
-)
+//区块链结构体实例定义
+//区块链包含：
+//1、将新产生的区块与已有的区块链接起来，并保存
+//2、可以查询某个区块的信息
+//可以将所有的区块进行遍历，输出区块信息
+type BlockChain struct {
+	LastHash []byte //最新区块的hash
+	BoltDb   *bolt.DB
+}
 
 var BUCKET_NAME = "blocks"
 var LAST_KEY = "lastbolck"
@@ -137,7 +135,7 @@ func NewBlockChain() BlockChain {
 	return bl
 }
 
-func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, error) {
+func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, *Block) {
 	var block *Block
 	db := bc.BoltDb
 	var e error
@@ -160,7 +158,7 @@ func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, error) {
 				block = eachBlock
 				break
 			}
-			//block = append(block, eachBlock)
+			block = append(block, eachBlock)
 			eachBig.SetBytes(eachBlock.PrevHash)
 			if eachBig.Cmp(zeroBig) == 0 { //通多if条件语句判断区块链遍历是否已到创世区块，如果是，跳出循环
 				break
