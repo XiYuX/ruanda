@@ -135,7 +135,7 @@ func NewBlockChain() BlockChain {
 	return bl
 }
 
-func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, *Block) {
+func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, error) {
 	var block *Block
 	db := bc.BoltDb
 	var e error
@@ -146,11 +146,10 @@ func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, *Block) {
 			return e
 		}
 		//桶存在
-		eachKey := []byte(LAST_KEY)
+		eachHash := bucket.Get([]byte(LAST_KEY))
 		eachBig := new(big.Int)
 		zeroBig := big.NewInt(0)
 		for {
-			eachHash := bucket.Get(eachKey)
 			eachBlockBytes := bucket.Get(eachHash)
 			eachBlock, _ := DeSerialize(eachBlockBytes)
 			//找到的情况
@@ -158,14 +157,13 @@ func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, *Block) {
 				block = eachBlock
 				break
 			}
-			block = append(block, eachBlock)
+			//找不到的情况：即已经到创世区块，还有找到，直接跳出循环
 			eachBig.SetBytes(eachBlock.PrevHash)
-			if eachBig.Cmp(zeroBig) == 0 { //通多if条件语句判断区块链遍历是否已到创世区块，如果是，跳出循环
+			if eachBig.Cmp(zeroBig) == 0 { //已经到创世区块了，还未找到
 				break
 			}
-			eachKey = eachBlock.PrevHash
+			eachHash = eachBlock.PrevHash
 		}
-
 		return nil
 	})
 	return nil, nil
