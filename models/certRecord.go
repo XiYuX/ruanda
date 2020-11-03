@@ -12,7 +12,7 @@ type CertRecord struct {
 	Phone      string //联系方式
 	AuthorCard string //身份证
 	FileName   string //认证文件名称
-	FileSize   string //文件大小
+	FileSize   int64 //文件大小
 	CertTime   int64  //认证时间
 }
 

@@ -4,7 +4,11 @@
     <list default="true" id="687643b3-3d8b-4962-97c0-3768c6ca57f1" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/uploadFileController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/uploadFileController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/certRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/certRecord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/hash.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/hash.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cert_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/cert_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,10 +171,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="281" y="86" width="718" height="548" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1602406334102" />
-    <state x="303" y="39" width="840" height="641" key="search.everywhere.popup" timestamp="1603867244569">
+    <state x="303" y="39" width="840" height="641" key="search.everywhere.popup" timestamp="1604370758234">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="39" width="840" height="641" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1603867244569" />
+    <state x="303" y="39" width="840" height="641" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1604370758234" />
     <state x="303" y="41" width="840" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1603769276222" />
   </component>
 </project>

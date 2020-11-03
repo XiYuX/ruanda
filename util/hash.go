@@ -33,6 +33,17 @@ func MD5HashReader(reader io.Reader) (string, error) {
 	hashBytes := md5Hash.Sum(nil)
 	return hex.EncodeToString(hashBytes), nil
 }
+//对一个io操作的reader（通常为文件)进行数据读取，并计算hash，返回sha256值
+func SHA256HashReader(reader io.Reader) (string, error) {
+	bytes, err := ioutil.ReadAll(reader)
+	if err != nil {
+		fmt.Println(err.Error())
+		return "", err
+	}
+	sha256Hash := sha256.New()
+	sha256Hash.Write(bytes)
+	return hex.EncodeToString(sha256Hash.Sum(nil)), nil
+}
 
 func SHA256HashBlock(data []byte) []byte {
 	//1、对block字段进行拼接

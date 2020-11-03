@@ -153,6 +153,7 @@ func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, error) {
 			eachBlockBytes := bucket.Get(eachHash)
 			eachBlock, _ := DeSerialize(eachBlockBytes)
 			//找到的情况
+
 			if string(eachBlock.Data) == string(cert_id) {
 				block = eachBlock
 				break

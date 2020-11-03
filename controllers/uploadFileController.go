@@ -4,9 +4,9 @@ import (
 	"DataCertProject/blockchain"
 	"DataCertProject/models"
 	"DataCertProject/util"
-	"github.com/astaxie/beego"
 	"bufio"
 	"fmt"
+	"github.com/astaxie/beego"
 	"io"
 	"os"
 	"time"
@@ -58,12 +58,13 @@ func (u *UploadFileController) Post() {
 	defer hashFile.Close()
 	hash, err := util.MD5HashReader(hashFile)
 
+	t := time.Now().Unix()
 	//3、将上传的记录保存到数据库中
 	record := models.UploadRecord{}
 	record.FileName = header.Filename
 	record.FileSize = header.Size
 	record.FileTitle = fileTitle
-	record.CertTime = time.Now().Unix() //毫秒数
+	record.CertTime = t //毫秒数
 	record.FileCert = hash
 	record.Phone = phone //手机
 	_, err = record.SaveRecord()
@@ -72,7 +73,28 @@ func (u *UploadFileController) Post() {
 		return
 	}
 	//将要认证的文件的hash值及个人实名信息保存到区块链上
-	_, err = blockchain.CHAIN.SaveData([]byte(hash))
+	//1、准备认证数据的用户信息
+	us, err := models.QuerUserByPhone(phone)
+	if err != nil {
+		u.Ctx.WriteString("抱歉，数据认证失败")
+		return
+	}
+	//准备认证的sha256hash值
+	certHash, _ := util.SHA256HashReader(hashFile)
+	//实例化一个认证数据的结构体实例
+	certRecord := models.CertRecord{
+		CertId:     []byte(hash),
+		CerHash:    []byte(certHash),
+		CertAuthor: us.Name,
+		AuthorCard: us.Card,
+		Phone:      us.Phone,
+		FileName:   header.Filename,
+		FileSize:   header.Size,
+		CertTime:   t,
+	}
+	//序列化
+	cerBytes,err := certRecord.SerializeRecord()
+	_, err = blockchain.CHAIN.SaveData(cerBytes)
 	if err != nil {
 		u.TplName = "blockErrorPage.html"
 		return
