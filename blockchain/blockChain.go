@@ -1,6 +1,7 @@
 package blockchain
 
 import (
+	"DataCertProject/models"
 	"errors"
 	"github.com/bolt-master"
 	"math/big"
@@ -149,12 +150,14 @@ func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block, error) {
 		eachHash := bucket.Get([]byte(LAST_KEY))
 		eachBig := new(big.Int)
 		zeroBig := big.NewInt(0)
+		var certRecord *models.CertRecord
 		for {
 			eachBlockBytes := bucket.Get(eachHash)
 			eachBlock, _ := DeSerialize(eachBlockBytes)
+			certRecord,_ =models.DeSerializeRecord(eachBlock.Data)
 			//找到的情况
 
-			if string(eachBlock.Data) == string(cert_id) {
+			if string(certRecord.CertId) == string(cert_id) {
 				block = eachBlock
 				break
 			}

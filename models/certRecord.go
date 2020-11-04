@@ -6,14 +6,17 @@ import (
 )
 
 type CertRecord struct {
-	CerHash    []byte //认证文件hash值
-	CertId     []byte //认证ID
-	CertAuthor string //认证人
-	Phone      string //联系方式
-	AuthorCard string //身份证
-	FileName   string //认证文件名称
-	FileSize   int64 //文件大小
-	CertTime   int64  //认证时间
+	CerHash        []byte //认证文件hash值
+	CerHashStr     string
+	CertId         []byte //认证ID
+	CertIdStr      string
+	CertAuthor     string //认证人
+	Phone          string //联系方式
+	AuthorCard     string //身份证
+	FileName       string //认证文件名称
+	FileSize       int64  //文件大小
+	CertTime       int64  //认证时间
+	CertTimeFormat string
 }
 
 //认证数据记录的序列化

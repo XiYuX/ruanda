@@ -47,9 +47,9 @@ func (u User) QueryUser() (*User, error) {
 		md5Hash.Write([]byte(u.Password))
 		passwordBytes := md5Hash.Sum(nil)
 		u.Password = hex.EncodeToString(passwordBytes)
-		row := db_mysql.Db.QueryRow("select phone from user where phone = ? and password = ? ",
-			u.Phone, u.Password)
-		err := row.Scan(&u.Phone)
+		row := db_mysql.Db.QueryRow("select phone ,name, card, sex,from user where phone = ? and password = ? ",
+			u.Phone, u.Password, )
+		err := row.Scan(&u.Phone, &u.Name, &u.Card, &u.Sex)
 		if err != nil {
 			return nil, err
 		}
@@ -58,12 +58,20 @@ func (u User) QueryUser() (*User, error) {
 }
 
 //根据用户的phone信息查询对应的用户信息
-func QuerUserByPhone(phone string)  (*User, error) {
-	row := db_mysql.Db.QueryRow("select phone,name,card,sex from user where phone = ? ", Phone)
+func QuerUserByPhone(phone string) (*User, error) {
+	row := db_mysql.Db.QueryRow("select phone,name,card,sex from user where phone = ? ", phone)
 	var user User
 	err := row.Scan(&user.Phone, &user.Password, &user.Name, &user.Card, &user.Sex)
 	if err != nil {
 		return nil, err
 	}
 	return &user, nil
+}
+
+func (u User) Update() (int64, error) {
+	rs, err := db_mysql.Db.Exec("update user set ,name = ?,card =?, sex = ?from user where phone = ?",u.Phone,u.Name,u.Card,u.Sex)
+	if err != nil {
+		return -1, err
+	}
+	return rs, nil
 }

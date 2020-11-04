@@ -2,6 +2,8 @@ package controllers
 
 import (
 	"DataCertProject/blockchain"
+	"DataCertProject/models"
+	"DataCertProject/util"
 	"github.com/astaxie/beego"
 	"strings"
 )
@@ -25,9 +27,14 @@ func (c *CertDetsilController) Get() {
 		c.Ctx.WriteString("抱歉,未查到链上数据,请重试!!!")
 		return
 	}
+	//序列化
+	certRecord,err:=models.DeSerializeRecord(blocks.Data)
+	certRecord.CerHashStr =string(certRecord.CerHash)
+	certRecord.CertIdStr = strings.ToUpper(string(certRecord.CertId))
+	certRecord.CertTimeFormat = util.TimeFormat(certRecord.CertTime,0,util.TIME_FORMAT_THREE)
 	//查到了
 	//certId = hex.EncodeToString()
-	c.Data["CertId"] = strings.ToUpper(string(blocks.Data))
+	c.Data["CertRecord"] = certRecord
 
 	//跳转页面
 	c.TplName = "cert_detail.html"
