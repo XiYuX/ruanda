@@ -43,7 +43,7 @@ func (l *LoginController) Post() {
 		l.TplName = "user_kyc.html"
 		return
 	}
-	id ,err:= user.Update()
+	_ ,err = user.Update()
 	if err !=nil{
 		l.Ctx.WriteString("")
 		return

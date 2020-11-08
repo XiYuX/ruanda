@@ -69,9 +69,10 @@ func QuerUserByPhone(phone string) (*User, error) {
 }
 
 func (u User) Update() (int64, error) {
-	rs, err := db_mysql.Db.Exec("update user set ,name = ?,card =?, sex = ?from user where phone = ?",u.Phone,u.Name,u.Card,u.Sex)
+	rs, err := db_mysql.Db.Exec("update user set ,name = ?,card =?, sex = ?where phone = ?",u.Name,u.Card,u.Sex,u.Phone)
 	if err != nil {
 		return -1, err
 	}
-	return rs, nil
+
+	return rs.RowsAffected()
 }
