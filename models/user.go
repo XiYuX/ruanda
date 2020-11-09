@@ -11,9 +11,9 @@ type User struct {
 	Id       int    `form:"id"`
 	Phone    string `form:"phone"`
 	Password string `form:"password"`
-	Name     string `form:name`
-	Card     string `form:card`
-	Sex      string `form:sex`
+	Name     string `form:"name"`
+	Card     string `form:"card"`
+	Sex      string `form:"sex"`
 }
 
 //定义一个方法
@@ -47,7 +47,7 @@ func (u User) QueryUser() (*User, error) {
 		md5Hash.Write([]byte(u.Password))
 		passwordBytes := md5Hash.Sum(nil)
 		u.Password = hex.EncodeToString(passwordBytes)
-		row := db_mysql.Db.QueryRow("select phone ,name, card, sex,from user where phone = ? and password = ? ",
+		row := db_mysql.Db.QueryRow("select phone ,name, card, sex from user where phone = ? and password = ? ",
 			u.Phone, u.Password, )
 		err := row.Scan(&u.Phone, &u.Name, &u.Card, &u.Sex)
 		if err != nil {

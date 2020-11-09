@@ -22,5 +22,9 @@ func init() {
 	beego.Router("/user_kyc.html",&controllers.UserKycController{})
 	//用户实名认证接口
 	beego.Router("/user_kyc",&controllers.UserKycController{})
-
+	//短信验证码登录
+	beego.Router("/login_sms.html",&controllers.SmsLoginController{})
+	//
+	beego.Router("/sms_")
 }
+
