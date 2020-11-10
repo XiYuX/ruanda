@@ -43,14 +43,13 @@ func (s *SendSmsController) Post() {
 		Status:  result.Code,
 		Message: result.Message,
 	}
-	_,err = smsRecord.SaveSms()
-	if err!=nil {
+	_, err = smsRecord.SaveSms()
+	if err != nil {
 		s.Ctx.WriteString("获取验证码失败，请重试！！！")
 		return
 	}
 	//b、跳转到登录提交页面
-
-	s.TplName = "login_sms.html"
-
-
+	s.TplName = "login_sms_submit.html"
 }
+
+

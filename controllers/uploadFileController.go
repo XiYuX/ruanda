@@ -16,6 +16,12 @@ type UploadFileController struct {
 	beego.Controller
 }
 
+func (u *UploadFileController) Get(){
+	phone :=u.GetString("phone")
+	u.Data["Phone"] = phone
+	u.TplName = "home.html"
+}
+
 //使用post方法上传
 
 func (u *UploadFileController) Post() {
@@ -69,6 +75,7 @@ func (u *UploadFileController) Post() {
 	record.Phone = phone //手机
 	_, err = record.SaveRecord()
 	if err != nil {
+		fmt.Println(err.Error())
 		u.TplName = "fileErrorPage.html"
 		return
 	}

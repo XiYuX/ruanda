@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="687643b3-3d8b-4962-97c0-3768c6ca57f1" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/sendSmsController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/smsLoginController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/smsRecord.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/sentSms.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login_sms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/app-c7b496447f00d1b093df.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app-c7b496447f00d1b093df.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login_sms_submit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" afterPath="$PROJECT_DIR$/chain.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/sendSmsController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sendSmsController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/smsLoginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/smsLoginController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/uploadFileController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/uploadFileController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/smsRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/smsRecord.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cert_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/cert_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login_sms.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login_sms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,11 +77,11 @@
       <recent name="C:\gopackage\src\DataCertProject\controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\gopackage\src\DataCertProject\static\js" />
+      <recent name="C:\gopackage\src\DataCertProject\static\css" />
       <recent name="C:\gopackage\src\DataCertProject\views" />
       <recent name="C:\gopackage\src\DataCertProject\routers" />
       <recent name="C:\gopackage\src\DataCertProject\static" />
-      <recent name="C:\gopackage\src\DataCertProject\blockchain" />
-      <recent name="C:\gopackage\src\DataCertProject\static\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,25 +148,25 @@
     </state>
     <state x="421" y="55" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604887413193" />
     <state x="421" y="119" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1603797889354" />
-    <state width="1227" height="131" key="GridCell.Tab.0.bottom" timestamp="1604888206927">
+    <state width="1227" height="131" key="GridCell.Tab.0.bottom" timestamp="1604931096683">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1227" height="131" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604888206927" />
+    <state width="1227" height="131" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604931096683" />
     <state width="822" height="119" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
-    <state width="1227" height="131" key="GridCell.Tab.0.center" timestamp="1604888206925">
+    <state width="1227" height="131" key="GridCell.Tab.0.center" timestamp="1604931096683">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1227" height="131" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604888206925" />
+    <state width="1227" height="131" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604931096683" />
     <state width="822" height="119" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
-    <state width="1227" height="131" key="GridCell.Tab.0.left" timestamp="1604888206925">
+    <state width="1227" height="131" key="GridCell.Tab.0.left" timestamp="1604931096683">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1227" height="131" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604888206925" />
+    <state width="1227" height="131" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604931096683" />
     <state width="822" height="119" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
-    <state width="1227" height="131" key="GridCell.Tab.0.right" timestamp="1604888206926">
+    <state width="1227" height="131" key="GridCell.Tab.0.right" timestamp="1604931096683">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1227" height="131" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604888206926" />
+    <state width="1227" height="131" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604931096683" />
     <state width="822" height="119" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1603336029235" />
     <state x="44" y="0" key="SettingsEditor" timestamp="1604232699174">
       <screen x="0" y="0" width="1280" height="680" />
